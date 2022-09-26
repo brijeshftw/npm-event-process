@@ -31,6 +31,7 @@
     "mongodb": "^4.10.0",
     "mysql": "^2.18.1",
     "nestjs-knex": "^2.0.0",
+    "npm-event-system": "github:brijeshftw/npm-event-process",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0"
@@ -57,6 +58,10 @@
     "ts-node": "^10.0.0",
     "tsconfig-paths": "4.0.0",
     "typescript": "^4.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brijeshftw/npm-event-process.git"
   },
   "jest": {
     "moduleFileExtensions": [
