@@ -3,7 +3,7 @@ import { Controller, HttpCode, Get, HttpStatus } from '@nestjs/common';
 import { AppService } from 'src/app.service';
 
 @Controller()
-export class MigrationController {
+export class AppController {
   constructor(private appService: AppService) {}
 
   @Get()

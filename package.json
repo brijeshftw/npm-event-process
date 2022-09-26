@@ -1,10 +1,10 @@
 {
   "name": "event-process-system",
-  "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "version": "0.0.2",
+  "description":"npm package creation for event process system. We can avoid the repeated code by adding this dependency to new microservice",
+  "author": "brijesh",
   "private": false,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
@@ -31,7 +31,6 @@
     "mongodb": "^4.10.0",
     "mysql": "^2.18.1",
     "nestjs-knex": "^2.0.0",
-    "npm-event-system": "github:brijeshftw/npm-event-process",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0"
@@ -61,8 +60,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/brijeshftw/npm-event-process.git"
+    "url": "git+https://github.com/brijeshftw/npm-event-process.git"
   },
+  "keywords": [
+    "npm"
+  ],
   "jest": {
     "moduleFileExtensions": [
       "js",
@@ -79,5 +81,13 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
+  },
+  "bugs": {
+    "url": "https://github.com/brijeshftw/npm-event-process/issues"
+  },
+  "homepage": "https://github.com/brijeshftw/npm-event-process#readme",
+  "main": "src/main.ts",
+  "directories": {
+    "test": "test"
   }
 }
