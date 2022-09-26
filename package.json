@@ -1,9 +1,8 @@
 {
   "name": "event-process-system",
-  "version": "0.0.3",
+  "version": "1.0.4",
   "description":"npm package creation for event process system. We can avoid the repeated code by adding this dependency to new microservice",
   "author": "brijesh",
-  "private": false,
   "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
