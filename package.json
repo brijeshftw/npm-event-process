@@ -1,8 +1,9 @@
 {
   "name": "event-process-system",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description":"npm package creation for event process system. We can avoid the repeated code by adding this dependency to new microservice",
   "license": "MIT",
+  "bin": "createStructure.js",
   "keywords": [
   "npm"
   ],
