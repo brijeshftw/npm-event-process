@@ -1,6 +1,6 @@
 {
   "name": "event-process-system",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description":"npm package creation for event process system. We can avoid the repeated code by adding this dependency to new microservice",
   "license": "MIT",
   "keywords": [
@@ -56,11 +56,6 @@
     "tsconfig-paths": "4.0.0",
     "typescript": "^4.3.5"
   },
-  "licenses": [
-    {
-      "type": "MIT"
-    }
-  ],
   "jest": {
     "moduleFileExtensions": [
       "js",
