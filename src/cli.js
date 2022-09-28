@@ -30,7 +30,7 @@
        let repoUrl = "";
        shell.mkdir(project_name);
        shell.cd(project_name);
-       if (template === "React") {
+       if (template === "Nest") {
          repoUrl = "https://github.com/brijeshftw/npm-event-process.git";
        } else {
          repoUrl = "https://github.com/brijeshftw/npm-event-process.git";
