@@ -1,11 +1,17 @@
 {
   "name": "event-process-system",
   "version": "1.0.9",
-  "description":"npm package creation for event process system. We can avoid the repeated code by adding this dependency to new microservice",
+  "description": "npm package creation for event process system. We can avoid the repeated code by adding this dependency to new microservice",
   "license": "MIT",
-  "bin": "createStructure.js",
+  "bin": {
+    "@event-process-system": "bin/mg-create-project",
+    "mg-create-project": "bin/mg-create-project"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
-  "npm"
+    "npm"
   ],
   "homepage": "https://github.com/brijeshftw/npm-event-process#readme",
   "bugs": "https://github.com/brijeshftw/npm-event-process/issues",
@@ -14,10 +20,10 @@
     "email": "brijesh.nimap@grab.in",
     "url": "https://github.com/brijeshftw/npm-event-process"
   },
-  "main": "src/main.ts",
+  "main": "src/cli.js",
   "repository": {
     "type": "git",
-    "url":"git://github.com/brijeshftw/npm-event-process.git"
+    "url": "git://github.com/brijeshftw/npm-event-process.git"
   },
   "dependencies": {
     "@nestjs/axios": "^0.1.0",
@@ -25,14 +31,21 @@
     "@nestjs/config": "^2.2.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
+    "chalk": "^5.0.1",
+    "cli-welcome": "^2.2.2",
+    "colors": "^1.4.0",
+    "esm": "^3.2.25",
+    "inquirer": "^9.1.2",
     "kafkajs": "^2.2.0",
     "knex": "^2.3.0",
     "mongodb": "^4.10.0",
     "mysql": "^2.18.1",
+    "nanospinner": "^1.1.0",
     "nestjs-knex": "^2.0.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^7.2.0"
+    "rxjs": "^7.2.0",
+    "shelljs": "^0.8.5"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",
