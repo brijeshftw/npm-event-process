@@ -1,12 +1,7 @@
-/**
- * mg-project-cli
- * Cli for generating nest project
- *
- * 
- */
+
 
  import { createSpinner } from "nanospinner";
- import inquirer from "inquirer";
+ const inquirer = require('inquirer');
  import shell from "shelljs";
  import welcome from "cli-welcome";
  import colors from "colors";
