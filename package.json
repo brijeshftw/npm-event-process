@@ -7,7 +7,7 @@
     "@event-process-system": "bin/mg-create-project",
     "mg-create-project": "bin/mg-create-project.js"
   },
-
+"type":"module",
   "publishConfig": {
     "access": "public"
   },
