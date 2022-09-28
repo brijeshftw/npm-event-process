@@ -1,7 +1,7 @@
 
 
  import { createSpinner } from "nanospinner";
- const inquirer = require('inquirer');
+ import inquirer from 'inquirer';
  import shell from "shelljs";
  import welcome from "cli-welcome";
  import colors from "colors";
