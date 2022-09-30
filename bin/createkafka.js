@@ -87,9 +87,6 @@ async function setup() {
     // Remove extra files
     fs.unlinkSync(path.join(appPath, 'bin', 'createkafka.js'));
     fs.rmdirSync(path.join(appPath, 'bin'));
-    if (!useYarn) {
-      fs.unlinkSync(path.join(appPath, 'yarn.lock'));
-    }
 
     console.log('Installation is now complete!');
     console.log();
