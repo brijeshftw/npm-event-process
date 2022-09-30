@@ -5,6 +5,7 @@ const fs = require('fs');
 const { execSync } = require('child_process');
 
 
+
 const exec = util.promisify(require('child_process').exec);
 async function runCmd(command) {
   try {
@@ -56,7 +57,6 @@ try {
 async function setup() {
   try {
 
-    console.log(`Downloading files from repo ${repo}`);
     await runCmd(`git clone --depth 1 ${repo} ${folderName}`);
     console.log('Cloned successfully.');
     console.log('');
@@ -89,11 +89,10 @@ async function setup() {
 
     console.log('start by typing:');
     console.log(`    cd ${folderName}`);
-    console.log(hasNpm ? '    yarn dev' : '    npm run dev');
-    console.log();
   } catch (error) {
     console.log(error);
   }
 }
 
+askTemplate();
 setup();
