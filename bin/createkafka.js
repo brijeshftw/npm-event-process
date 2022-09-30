@@ -18,7 +18,7 @@ async function runCmd(command) {
   }
 }
 
-async function hasYarn() {
+async function useNpm() {
   try {
     await execSync('yarnpkg --version', { stdio: 'ignore' });
     return true;
@@ -67,9 +67,9 @@ async function setup() {
     process.chdir(appPath);
 
     // Install dependencies
-    const useYarn = await hasYarn();
+    const hasNpm = await useNpm();
     console.log('Installing dependencies...');
-    if (useYarn) {
+    if (hasNpm) {
       await runCmd('yarn install');
     } else {
       await runCmd('npm install');
@@ -93,7 +93,7 @@ async function setup() {
 
     console.log('We suggest that you start by typing:');
     console.log(`    cd ${folderName}`);
-    console.log(useYarn ? '    yarn dev' : '    npm run dev');
+    console.log(hasNpm ? '    yarn dev' : '    npm run dev');
     console.log();
     console.log('Check README.md for more info.');
   } catch (error) {
