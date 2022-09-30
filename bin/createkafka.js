@@ -85,7 +85,7 @@ async function setup() {
     await runCmd('npx rimraf ./.git');
 
     // Remove extra files
-    fs.unlinkSync(path.join(appPath, 'bin', 'createNodejsApp.js'));
+    fs.unlinkSync(path.join(appPath, 'bin', 'createkafka.js'));
     fs.rmdirSync(path.join(appPath, 'bin'));
     if (!useYarn) {
       fs.unlinkSync(path.join(appPath, 'yarn.lock'));
