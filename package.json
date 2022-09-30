@@ -3,10 +3,6 @@
   "version": "1.2.6",
   "description": "npm package creation for event process system. We can avoid the repeated code by adding this dependency to new microservice",
   "license": "MIT",
-  "bin": {
-    "@event-process-system": "bin/mg-create-project",
-    "mg-create-project": "bin/mg-create-project.js"
-  },
   
 "type":"module",
   "publishConfig": {
