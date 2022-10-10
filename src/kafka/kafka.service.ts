@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { MysqlService } from '../TypeOrm/mysql.service';
 // import {myprint} from '@sample_npm/sample-print';
-import { KafkaProvider } from "@sample_npm/sample-print";
+// import { KafkaProvider } from "@sample_npm/sample-print";
 import { SimpleConsoleLogger } from 'typeorm';
 
 @Injectable()

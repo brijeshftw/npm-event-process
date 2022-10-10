@@ -1,5 +1,5 @@
-import { Kafka } from 'kafkajs';
-import { Observable } from 'rxjs';
+import { Consumer, Kafka, Producer } from 'kafkajs';
+
 
 
 export class KafkaProvider {
@@ -9,8 +9,8 @@ export class KafkaProvider {
   private retry: object;
   private requestTimeout: number;
   private kafka:any;
-  private consumer:any;
-  private producer:any;
+  private consumer:Consumer;
+  private producer:Producer;
   private topic:string;
   private fromBeginning:boolean;
   private groupId:string;
@@ -70,9 +70,10 @@ export class KafkaProvider {
       topic: this.topic,
       fromBeginning: false,
     });
-   return await this.consumer.run({
+    await this.consumer.run({
       eachMessage: async ({ message }) => {
         const mainData = JSON.parse(message.value.toString());
+
             // await this.kafkaService.consumerToglobal(mainData);  
            
       },    

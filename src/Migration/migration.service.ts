@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 // import { KafkaProvider } from 'src/kafka/kafka.provider';
-import { KafkaProvider } from '@sample_npm/sample-print';
+import { KafkaProvider } from '@sample_npm/sample-package';
 import { Subject } from 'rxjs';
 
 @Injectable()

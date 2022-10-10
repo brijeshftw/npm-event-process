@@ -120,7 +120,9 @@ var KafkaProvider = /** @class */ (function () {
                                     });
                                 }
                             })];
-                    case 3: return [2 /*return*/, _a.sent()];
+                    case 3:
+                        _a.sent();
+                        return [2 /*return*/];
                 }
             });
         });
